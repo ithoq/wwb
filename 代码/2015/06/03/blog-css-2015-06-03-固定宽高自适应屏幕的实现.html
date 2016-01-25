@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<!--[if lte IE 9]><meta http-equiv="refresh" content="0;url={{ "/ie.html" | prepend: site.baseurl }}"><![endif]-->
+
+<title>固定宽高自适应屏幕的实现</title>
+
+<meta name="keywords" content="undefined">
+
+<meta name="description " content="喵喵喵～">
+
+<link rel="icon" href="/img/favicon.png">
+
+<link rel="stylesheet" href="../../../../css/style.css" type="text/css">
+
+  </head>
+  <body>
+    <aside id="sidebar">
+  <div id="tags">
+    <div id="sidebar-social">
+      <a href="/feed.xml" class="sidebar-social-icon feed"></a>
+      <a href="mailto:bin2302@gmail.com" class="sidebar-social-icon email"></a>
+      <a href="https://twitter.com/eqielb" class="sidebar-social-icon twitter" target="_blank"></a>
+      <a href="https://github.com/eqielb" class="sidebar-social-icon github" target="_blank"></a>
+    </div>
+    <ul id="tags__ul">
+      <li id="pl__all" class="tags__li tags__li-all tags-btn active">
+        <b style="background-image:url(/img/r/0.jpg);"></b>
+        <h4>所有</h4>
+      </li>
+      
+      <li id="代码" data-filter="代码" class="tags__li tags-btn">
+        <b style="background-image:url(/img/r/1.jpg);"></b>
+        <h4>代码</h4>
+      </li>
+      
+      <li id="日常" data-filter="日常" class="tags__li tags-btn">
+        <b style="background-image:url(/img/r/2.jpg);"></b>
+        <h4>日常</h4>
+      </li>
+      
+      <li id="其他" data-filter="其他" class="tags__li tags-btn">
+        <b style="background-image:url(/img/r/3.jpg);"></b>
+        <h4>其他</h4>
+      </li>
+      
+    </ul>
+  </div> <!-- end #tags -->
+  <div id="posts-list">
+    <div id="search-form">
+      <a href="/index.html" id="mobile-avatar" style="background-image:url(/img/avatar.jpg)"></a>
+      <input id="search-input" type="text" placeholder="搜索 (っ °Д °;)っ">
+    </div>
+    <nav id="pl__container">
+      
+        
+          <a class="代码 pl__all" href="/../../../2014/08/12/specifications-XDG-Base-Directory-Specification-cn.html" title="XDG Base Directory Specification">
+            <span class="pl__circle"></span>
+            <span class="pl__title">XDG Base Directory Specification</span>
+            <span class="pl__date">2014-08-12</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/08/12/specifications-XDG-Base-Directory-Specification.html" title="XDG Base Directory Specification">
+            <span class="pl__circle"></span>
+            <span class="pl__title">XDG Base Directory Specification</span>
+            <span class="pl__date">2014-08-12</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/08/12/specifications-Recommend-Code-Style.html" title="Recommend Code Style">
+            <span class="pl__circle"></span>
+            <span class="pl__title">Recommend Code Style</span>
+            <span class="pl__date">2014-08-12</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/08/12/docs-php-functions-setcookie.html" title="setcookie">
+            <span class="pl__circle"></span>
+            <span class="pl__title">setcookie</span>
+            <span class="pl__date">2014-08-12</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/08/11/docs-javascript-MDN-classes-App.html" title="App">
+            <span class="pl__circle"></span>
+            <span class="pl__title">App</span>
+            <span class="pl__date">2014-08-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/08/11/docs-javascript-MDN-classes-AnimationEvent.html" title="AnimationEvent">
+            <span class="pl__circle"></span>
+            <span class="pl__title">AnimationEvent</span>
+            <span class="pl__date">2014-08-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/08/11/docs-javascript-MDN-classes-AnalyserNode.html" title="AnalyserNode">
+            <span class="pl__circle"></span>
+            <span class="pl__title">AnalyserNode</span>
+            <span class="pl__date">2014-08-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/08/11/docs-javascript-MDN-classes-AbstractWorker.html" title="AbstractWorker">
+            <span class="pl__circle"></span>
+            <span class="pl__title">AbstractWorker</span>
+            <span class="pl__date">2014-08-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/03/08/blog-php-2014-03-08-install-laravel-tourism.html" title="安装 Laravel 教程">
+            <span class="pl__circle"></span>
+            <span class="pl__title">安装 Laravel 教程</span>
+            <span class="pl__date">2014-03-08</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/blog-nodejs-2015-06-03-Node中base64编码与解码.html" title="Node中base64编码与解码">
+            <span class="pl__circle"></span>
+            <span class="pl__title">Node中base64编码与解码</span>
+            <span class="pl__date">2015-06-03</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/09/27/blog-nodejs-2014-09-27-nodejs-note.html" title="nodejs-note">
+            <span class="pl__circle"></span>
+            <span class="pl__title">nodejs-note</span>
+            <span class="pl__date">2014-09-27</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/04/23/blog-nodejs-2014-04-23-MEAN-新建模块的时候模块名中不能使用下划线.html" title="MEAN 新建模块的时候模块名中不能使用下划线">
+            <span class="pl__circle"></span>
+            <span class="pl__title">MEAN 新建模块的时候模块名中不能使用下划线</span>
+            <span class="pl__date">2014-04-23</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/04/05/blog-nodejs-2014-04-05-cnpmjs-source.html" title="国内高速 npm 源">
+            <span class="pl__circle"></span>
+            <span class="pl__title">国内高速 npm 源</span>
+            <span class="pl__date">2014-04-05</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/04/02/blog-nodejs-2014-04-02-install-node-opencv.html" title="安装 node-opencv">
+            <span class="pl__circle"></span>
+            <span class="pl__title">安装 node-opencv</span>
+            <span class="pl__date">2014-04-02</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../01/19/blog-mongodb-2015-01-19-mongoose文档粗译.html" title="mongoose 文档粗译">
+            <span class="pl__circle"></span>
+            <span class="pl__title">mongoose 文档粗译</span>
+            <span class="pl__date">2015-01-19</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/09/28/blog-mongodb-2014-09-28-mongoose文档粗译.html" title="mongoose 文档粗译">
+            <span class="pl__circle"></span>
+            <span class="pl__title">mongoose 文档粗译</span>
+            <span class="pl__date">2014-09-28</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/09/28/blog-mongodb-2014-09-28-mongoose.html" title="mongoose 文档粗译">
+            <span class="pl__circle"></span>
+            <span class="pl__title">mongoose 文档粗译</span>
+            <span class="pl__date">2014-09-28</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../15/blog-javascript-2015-06-15-javascript生成指定位数的随机字符串.html" title="javascript生成指定位数的随机字符串">
+            <span class="pl__circle"></span>
+            <span class="pl__title">javascript生成指定位数的随机字符串</span>
+            <span class="pl__date">2015-06-15</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/blog-javascript-2015-06-03-swipe组件使用注意事项.html" title="swipe组件使用注意事项">
+            <span class="pl__circle"></span>
+            <span class="pl__title">swipe组件使用注意事项</span>
+            <span class="pl__date">2015-06-03</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2013/02/11/blog-javascript-2015-03-21-译.html" title="[译]SceneVR: Node 和 WebGL 3D 场景">
+            <span class="pl__circle"></span>
+            <span class="pl__title">[译]SceneVR: Node 和 WebGL 3D 场景</span>
+            <span class="pl__date">2013-02-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../04/30/blog-ios-2015-04-30-CocoaPods-Pod-Install-错误解决.html" title="CocoaPods Pod Install 错误解决">
+            <span class="pl__circle"></span>
+            <span class="pl__title">CocoaPods Pod Install 错误解决</span>
+            <span class="pl__date">2015-04-30</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../02/15/blog-ios-2015-02-15-升级xcode后项目编译错误.html" title="升级xcode之后项目编译错误">
+            <span class="pl__circle"></span>
+            <span class="pl__title">升级xcode之后项目编译错误</span>
+            <span class="pl__date">2015-02-15</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/12/25/blog-ios-2014-12-25-dispatch-once-t-的作用.html" title="dispatch_once_t 的作用">
+            <span class="pl__circle"></span>
+            <span class="pl__title">dispatch_once_t 的作用</span>
+            <span class="pl__date">2014-12-25</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/03/11/blog-html-2014-03-11-火狐浏览器表单错误验证消息.html" title="火狐浏览器表单错误验证消息">
+            <span class="pl__circle"></span>
+            <span class="pl__title">火狐浏览器表单错误验证消息</span>
+            <span class="pl__date">2014-03-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2013/02/11/blog-git-2015-05-19-github-请求超过限制.html" title="为 VPS 添加 ssh 公钥">
+            <span class="pl__circle"></span>
+            <span class="pl__title">为 VPS 添加 ssh 公钥</span>
+            <span class="pl__date">2013-02-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/04/02/blog-git-2014-04-02-git-多账号切换问题.html" title="Git多账号切换问题">
+            <span class="pl__circle"></span>
+            <span class="pl__title">Git多账号切换问题</span>
+            <span class="pl__date">2014-04-02</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../07/18/blog-css-2015-07-18-interpolation-mode属性介绍.html" title="-ms-interpolation-mode属性介绍">
+            <span class="pl__circle"></span>
+            <span class="pl__title">-ms-interpolation-mode属性介绍</span>
+            <span class="pl__date">2015-07-18</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/" title="固定宽高自适应屏幕的实现">
+            <span class="pl__circle"></span>
+            <span class="pl__title">固定宽高自适应屏幕的实现</span>
+            <span class="pl__date">2015-06-03</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/10/11/blog-css-2014-10-11-谷歌浏览器字体解析问题.html" title="谷歌浏览器字体解析问题">
+            <span class="pl__circle"></span>
+            <span class="pl__title">谷歌浏览器字体解析问题</span>
+            <span class="pl__date">2014-10-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/09/04/blog-css-2014-09-04-translate3d.html" title="Unable to stop CSS3 transition of transform by translate3d">
+            <span class="pl__circle"></span>
+            <span class="pl__title">Unable to stop CSS3 transition of transform by translate3d</span>
+            <span class="pl__date">2014-09-04</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/05/19/blog-css-2014-05-19-ie67-overflow-hidden-bug.html" title="ie67 overflow hidden 不起效果的bug">
+            <span class="pl__circle"></span>
+            <span class="pl__title">ie67 overflow hidden 不起效果的bug</span>
+            <span class="pl__date">2014-05-19</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../02/22/blog-cordova-2015-01-22-cordova.html" title="2015-02-22">
+            <span class="pl__circle"></span>
+            <span class="pl__title">2015-02-22</span>
+            <span class="pl__date">2015-02-22</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../01/04/blog-cordova-2015-01-04-cordova1.html" title="2015-01-04">
+            <span class="pl__circle"></span>
+            <span class="pl__title">2015-01-04</span>
+            <span class="pl__date">2015-01-04</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2016/01/25/blog-angularjs-2014-05-21-angular-遇到的坑记录.html" title="angular 踩坑记录">
+            <span class="pl__circle"></span>
+            <span class="pl__title">angular 踩坑记录</span>
+            <span class="pl__date">2016-01-25</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2016/01/25/blog-angularjs-2014-05-20-angular-一步一个坑.html" title="angular 一步一个坑">
+            <span class="pl__circle"></span>
+            <span class="pl__title">angular 一步一个坑</span>
+            <span class="pl__date">2016-01-25</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2016/01/25/blog-angularjs-2014-05-20-angular-Duplicates-in-a-repeater-are-not-allowed-错误.html" title="angular Duplicates in a repeater are not allowed 错误">
+            <span class="pl__circle"></span>
+            <span class="pl__title">angular Duplicates in a repeater are not allowed 错误</span>
+            <span class="pl__date">2016-01-25</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/03/14/blog-android-2014-04-14-android学习笔记.html" title="2014-03-14">
+            <span class="pl__circle"></span>
+            <span class="pl__title">2014-03-14</span>
+            <span class="pl__date">2014-03-14</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2013/02/11/blog-android-2013-02-11-Moto-defy-Mac-上无法连接-adb-问题.html" title="Moto defy Mac 上无法连接 adb 问题">
+            <span class="pl__circle"></span>
+            <span class="pl__title">Moto defy Mac 上无法连接 adb 问题</span>
+            <span class="pl__date">2013-02-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../24/blog-2015-06-24-堡垒机简介.html" title="堡垒机简介">
+            <span class="pl__circle"></span>
+            <span class="pl__title">堡垒机简介</span>
+            <span class="pl__date">2015-06-24</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../14/blog-2015-06-14-new-Image-打点注意事项.html" title="new Image() 打点注意事项">
+            <span class="pl__circle"></span>
+            <span class="pl__title">new Image() 打点注意事项</span>
+            <span class="pl__date">2015-06-14</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2013/02/11/blog-2015-04-05.html" title="为 VPS 添加 ssh 公钥">
+            <span class="pl__circle"></span>
+            <span class="pl__title">为 VPS 添加 ssh 公钥</span>
+            <span class="pl__date">2013-02-11</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/12/24/blog-2014-12-24-买手全球购活动首尔站项目总结.html" title="买手全球购活动首尔站项目总结">
+            <span class="pl__circle"></span>
+            <span class="pl__title">买手全球购活动首尔站项目总结</span>
+            <span class="pl__date">2014-12-24</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2016/01/25/blog-2014-07-29-drafts2.html" title="drafts2">
+            <span class="pl__circle"></span>
+            <span class="pl__title">drafts2</span>
+            <span class="pl__date">2016-01-25</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2016/01/25/blog-2014-06-28-centos-network-setting-in-vertual-box.html" title="centos 配置">
+            <span class="pl__circle"></span>
+            <span class="pl__title">centos 配置</span>
+            <span class="pl__date">2016-01-25</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/04/23/blog-2014-06-17-drafts.html" title="坑记录">
+            <span class="pl__circle"></span>
+            <span class="pl__title">坑记录</span>
+            <span class="pl__date">2014-04-23</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/04/23/blog-2014-04-23-oh-my-zsh-中bundler-plugin-with-bower插件冲突.html" title="oh-my-zsh-中bundler插件和bower插件冲突">
+            <span class="pl__circle"></span>
+            <span class="pl__title">oh-my-zsh-中bundler插件和bower插件冲突</span>
+            <span class="pl__date">2014-04-23</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/04/08/blog-2014-04-08-通过-samba-实现-win-mac-visite-linux.html" title="通过 Samba 实现 Win/Mac 访问 Linux">
+            <span class="pl__circle"></span>
+            <span class="pl__title">通过 Samba 实现 Win/Mac 访问 Linux</span>
+            <span class="pl__date">2014-04-08</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/03/31/blog-2014-03-31-chanced-upon-an-idea-bug.html" title="chanced upon an IDEA bug">
+            <span class="pl__circle"></span>
+            <span class="pl__title">chanced upon an IDEA bug</span>
+            <span class="pl__date">2014-03-31</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2014/03/13/blog-2014-03-13-error-after-update-requests-package.html" title="更新 requests 包之后报 has no attribute &#39;__getitem__&#39; 的错">
+            <span class="pl__circle"></span>
+            <span class="pl__title">更新 requests 包之后报 has no attribute &#39;__getitem__&#39; 的错</span>
+            <span class="pl__date">2014-03-13</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2013/12/13/blog-2014-03-11-常用框架集合.html" title="常用框架集合">
+            <span class="pl__circle"></span>
+            <span class="pl__title">常用框架集合</span>
+            <span class="pl__date">2013-12-13</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../../2013/12/13/blog-2013-12-13-产品平经理学习笔记-六大工作职责.html" title="产品平经理学习笔记-六大工作职责">
+            <span class="pl__circle"></span>
+            <span class="pl__title">产品平经理学习笔记-六大工作职责</span>
+            <span class="pl__date">2013-12-13</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../12/25/文章推荐.html" title="文章推荐">
+            <span class="pl__circle"></span>
+            <span class="pl__title">文章推荐</span>
+            <span class="pl__date">2015-12-25</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../11/06/文档.html" title="文档">
+            <span class="pl__circle"></span>
+            <span class="pl__title">文档</span>
+            <span class="pl__date">2015-11-06</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../10/28/微信分享图片大小设定.html" title="微信分享图片大小设定">
+            <span class="pl__circle"></span>
+            <span class="pl__title">微信分享图片大小设定</span>
+            <span class="pl__date">2015-10-28</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../09/18/常用图片占位服务.html" title="常用图片占位服务">
+            <span class="pl__circle"></span>
+            <span class="pl__title">常用图片占位服务</span>
+            <span class="pl__date">2015-09-18</span>
+          </a>
+        
+          <a class="代码 pl__all" href="/../../07/18/-interpolation-mode属性介绍.html" title="-ms-interpolation-mode 属性介绍">
+            <span class="pl__circle"></span>
+            <span class="pl__title">-ms-interpolation-mode 属性介绍</span>
+            <span class="pl__date">2015-07-18</span>
+          </a>
+        
+      
+        
+          <a class="日常 pl__all" href="/../../../../日常/2015/01/17/blog-av-2015-01-17-diary.html" title="Sat Jan 17 2015 00:00:00 GMT+0800 (CST)">
+            <span class="pl__circle"></span>
+            <span class="pl__title">Sat Jan 17 2015 00:00:00 GMT+0800 (CST)</span>
+            <span class="pl__date">2015-01-17</span>
+          </a>
+        
+          <a class="日常 pl__all" href="/../../../../日常/2015/01/14/blog-av-2015-01-14-diary.html" title="2015-01-14">
+            <span class="pl__circle"></span>
+            <span class="pl__title">2015-01-14</span>
+            <span class="pl__date">2015-01-14</span>
+          </a>
+        
+          <a class="日常 pl__all" href="/../../../../日常/2015/01/19/blog-2015-01-19-diary.html" title="2015-01-19">
+            <span class="pl__circle"></span>
+            <span class="pl__title">2015-01-19</span>
+            <span class="pl__date">2015-01-19</span>
+          </a>
+        
+          <a class="日常 pl__all" href="/../../../../日常/2015/12/27/装修.html" title="装修">
+            <span class="pl__circle"></span>
+            <span class="pl__title">装修</span>
+            <span class="pl__date">2015-12-27</span>
+          </a>
+        
+      
+        
+          <a class="其他 pl__all" href="/../../../../其他/2016/01/25/本周阅读推荐.html" title="本周阅读推荐">
+            <span class="pl__circle"></span>
+            <span class="pl__title">本周阅读推荐</span>
+            <span class="pl__date">2016-01-25</span>
+          </a>
+        
+      
+    </nav>
+  </div> <!-- end #posts-list -->
+</aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <article id="post__content">
+  <h1 id="post__title" data-identifier="2015-06-03">固定宽高自适应屏幕的实现</h1>
+  <p>大家都知道wap开发中body宽度是按手机浏览器的虚拟像素宽度来适配的。而高度属性不像宽度一样可以直接取百分比来实现的。</p>
+<p>这里我就举一个等比宽高（10:4.5）会场banner的例子,下面是文件列表</p>
+<p>Js css：<br>public/jsmobile/src/page-tuan-brandsale.js<br>public/cssmobile/src/page-tuan-brandsale.css<br>Demo忽视吧：<br>appbeta/views/tuan/mact/mobile/demo_brandsale.php<br>（这里不推荐直接用内容图去撑，站内的图片用的尺寸都比较大，加载起来较慢，用内容图去撑dom，会照成页面元素高度变化频繁，影响体验。） 先展示下banner图的基本样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*设置屏幕宽度94%，最大宽度为480px，防止banner图过大失真*/</span></span><br><span class="line"><span class="class">.active_pre_box</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">94%</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">max-width</span>:<span class="value"> <span class="number">480px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">8px</span> auto</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#d9d9d9</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">border-radius</span>:<span class="value"> <span class="number">5px</span></span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span></span><br><span class="line"><span class="class">.active_pre_box</span> <span class="class">.link_img</span> <span class="rules">&#123; <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100%</span></span></span>; <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>; <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>; <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>; &#125;</span></span><br></pre></td></tr></table></figure>
+<p>psd上的标准效果</p>
+<p>alt text</p>
+<p>1 设置一个多层min-height</p>
+<p>因为宽度是按百分比随手机浏览器宽度变化的，所以我们要按市面上主流的宽度来分层做min-height高度适配：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*针对360px以下的屏幕做适配*/</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">media</span> (max-width: <span class="number">360px</span>)  </span>&#123;</span><br><span class="line">    <span class="class">.active_pre_box</span> <span class="class">.link_img</span> <span class="rules">&#123; <span class="rule"><span class="attribute">min-height</span>:<span class="value"> <span class="number">135px</span></span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*针对[360px,420px)的屏幕做适配*/</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">media</span> (min-width: <span class="number">360px</span>) and (max-width: <span class="number">420px</span>) </span>&#123;</span><br><span class="line">    <span class="comment">/*不同屏幕设置不同min-height*/</span></span><br><span class="line">    <span class="class">.active_pre_box</span> <span class="class">.link_img</span> <span class="rules">&#123; <span class="rule"><span class="attribute">min-height</span>:<span class="value"> <span class="number">152px</span></span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*针对[420px,480px)的屏幕做适配*/</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">media</span> (min-width: <span class="number">420px</span>) and (max-width: <span class="number">480px</span>) </span>&#123;</span><br><span class="line">    <span class="comment">/*不同屏幕设置不同min-height*/</span></span><br><span class="line">    <span class="class">.active_pre_box</span> <span class="class">.link_img</span> <span class="rules">&#123; <span class="rule"><span class="attribute">min-height</span>:<span class="value"> <span class="number">178px</span></span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*适配480px以上屏幕*/</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">media</span> (min-width: <span class="number">480px</span>) </span>&#123;</span><br><span class="line">    <span class="comment">/*不同屏幕设置不同min-height*/</span></span><br><span class="line">    <span class="class">.active_pre_box</span> <span class="class">.link_img</span> <span class="rules">&#123; <span class="rule"><span class="attribute">min-height</span>:<span class="value"> <span class="number">216px</span></span></span>; &#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样做好后在320px，360px，420px，480px这几个标准尺寸的浏览器宽度下宽高比都为标准的10:4.5。</p>
+<p>但是在这几个标准尺寸之间的值就会比例就会稍有失调，例如479px下的显示效果</p>
+<p>alt text</p>
+<p>因为比列失调图片被截取了明显不能忍啊</p>
+<p>2设置撑高占位图撑高</p>
+<p>原理就是截取宽高比一张小的单色图来设置width:100%来实现等高占位。</p>
+<p>html代码：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 活动预览 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"active_pre_box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"link_img"</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 撑高占位图 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"fill_img"</span> <span class="attribute">src</span>=<span class="value">"http://s8.mogujie.cn/pic/140630/o61vu_kq2c42kkkrbdissugfjeg5sckzsew_20x9.png"</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- banner图片 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"banner_img lazy"</span> <span class="attribute">src</span>=<span class="value">"http://dummyimage.com/480x216/2ea79d/fff"</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 信息栏 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"active_info_bar"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"fr active_discount"</span>&gt;</span>0.3折起<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"fl active_name"</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span>&gt;</span>SIX GOD--蓝胖最爱！<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">css代码</span><br><span class="line"></span><br><span class="line">.fill_img &#123; display: block; width: 100%; &#125;</span><br><span class="line">/*内容图设置position:absolute,来定位*/</span><br><span class="line">.active_pre_box .banner_img &#123;</span><br><span class="line">    display: block;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 0; left: 0;</span><br><span class="line">    width: 100%;</span><br><span class="line">    border-radius: 5px 5px 0 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样就算banner内容图加载比较慢，dom也可以撑起来，还可以有一个稍微好看的背景，体验提升啊。 alt text</p>
+<p>但是！这样就有连带出2个问题了：</p>
+<p>1）怎么保证占位图预先出现</p>
+<p>2）怎么保证占位图加载成功</p>
+<p>解决1很简单在代码最上部设置一个预加载的dom，先把占位img放进去就好了</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.img_pre_hid &#123; height: 0; overflow: hidden; &#125;</span><br><span class="line"><span class="comment">&lt;!-- 占位图片预加载 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"img_pre_hid"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://s6.mogujie.cn/pic/140624/2_kq2g4tkdkrbegqkugfjeg5sckzsew_2x1.png"</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://s6.mogujie.cn/pic/140624/5_kq2ee3sdkrbgevsugfjeg5sckzsew_5x2.png"</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://s6.mogujie.cn/pic/140625/2_kq2hutk7krbhgssugfjeg5sckzsew_2x2.png"</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://s13.mogujie.cn/pic/140630/o61vu_kq2eiukkkrbdissugfjeg5sckzsew_20x11.png"</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://s6.mogujie.cn/pic/140630/o61vu_kq2c42kkkrbdissugfjeg5sckzsew_20x9.png"</span> <span class="attribute">alt</span>=<span class="value">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>解决2 则利用img的onerror事件来做一个失败重加载</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 图片出错处理，可以重加载指定的图片。超过重试次数仍不能正常显示的，显示缺省图片。</span><br><span class="line"> * imgObj:img节点对象</span><br><span class="line"> * maxErrorNum:最大出错次数，防止出现死循环</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">imgErrorReload</span>(<span class="params">imgObj,maxErrorNum</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> imgSrc = imgObj.src;</span><br><span class="line">    <span class="comment">// 每次加载失败次数减一</span></span><br><span class="line">    <span class="keyword">if</span>(maxErrorNum&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        imgObj.onerror=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            imgErrorReload(imgObj,maxErrorNum-<span class="number">1</span>);</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="comment">// 延迟0.5秒重新加载</span></span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            imgObj.src=imgSrc;</span><br><span class="line">        &#125;,<span class="number">500</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="comment">// 加载次数用完处理</span></span><br><span class="line">        <span class="comment">// imgObj.onerror=null;</span></span><br><span class="line">        <span class="comment">// imgObj.src="images/default.jpg";</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 遍历占位图片，初始化onerror方法</span></span><br><span class="line">$(<span class="string">'.img_pre_hid img'</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>( <span class="keyword">this</span>.complete ) &#123;</span><br><span class="line">        imgErrorReload(<span class="keyword">this</span>,<span class="number">10</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">this</span>.onerror = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            imgErrorReload(<span class="keyword">this</span>,<span class="number">10</span>);</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+</article>
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank"></a>
+</div> <!-- end #post__share -->
+<div id="disqus_thread" name="eqielb">
+  <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
+</div>
+<button id="js-fullscreen">
+  <span id="icon-arrow" class="fontello"></span>
+</button>
+<script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.pjax.js"></script>
+<script src="/js/nprogress.js"></script>
+<!-- <scrpit src="/js/highlight.pack.js"></scrpit> -->
+<script src="/js/script.js"></script>
+<!-- <script src="/js/js-lib.js"></script> -->
+
+
+  <link rel="stylesheet" href="/css/codeStyle/solarized-dark.css" />
+  <script src="/js/highlight.pack.js"></script>
+
+
+  <div id="post__action">
+      <a id="icon-heart" class="fontello" href="javascript:donate();"></a>
+  </div>
+  <script src="/layer/layer.js"></script>
+  <script src="/layer/extend/layer.ext.js"></script>
+
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="undefined" data-title="固定宽高自适应屏幕的实现" data-url="http://shuoit.net"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script>
+var duoshuoQuery = {short_name:"wwb"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+        <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Hosted on <a href="https://pages.github.com" target="_blank">Github</a></p>
+<!-- 百度统计 -->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?a01595b492af7e4a793230e3d49ae638";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+      </div>
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">目录</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
