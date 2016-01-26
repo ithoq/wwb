@@ -436,90 +436,74 @@
       <div id="pjax">
         
     <article id="post__content">
-      <h1 id="post__title" data-identifier="2014-08-11">AnimationEvent</h1>
-      <blockquote><p><strong>这是一个试验性的技术</strong><br>因为这项技术的规范还没稳定下来，在不同浏览器中使用前请先检查兼容表查看对应的前缀。另外需要注意的是试验性技术的语法和行为随着规范的变化在未来版本的浏览器中可能会发生改。</p>
+      <h1 id="post__title" data-identifier="2014-08-11">AnalyserNode</h1>
+      <blockquote><p>This article is in need of a technical review</p>
 </blockquote>
-<h3 id="Summary">Summary</h3><p>AnimationEvent 接口提供与 animations 相关的信息。</p>
-<h3 id="Properties">Properties</h3><p>还从父类 Event 中继承属性。</p>
+<blockquote><p><strong>草稿</strong><br>未完成</p>
+</blockquote>
+<blockquote><p><strong>这是一个试验性的技术</strong><br>因为这项技术的规范还没稳定下来，在不同浏览器中使用前请先检查兼容表查看对应的前缀。另外需要注意的是试验性技术的语法和行为随着规范的变化在未来版本的浏览器中可能会发生改。</p>
+</blockquote>
+<p>AnalyserNode 接口代表一个可以提供实时频率和时域分析信息的节点。是一个 AudioNode，将音频流无改变的从输入源导向输出源。这<br>个节点在 输出源没有连接上的时候也能够工作。</p>
+<p>![图]<br><blockquote><p>输入源个数：1<br>输出源个数：1（但是可以留空表示未连接）<br>信道数量模式：“explicit”<br>信道数量：1<br>信道阻断器：“speakers”</p>
+</blockquote></p>
+<h2 id="Properties">Properties</h2><p>从父类 AudioNode 继承属性</p>
 <ul>
-<li><p>AnimationEvent.animationName <strong>Read only</strong></p>
+<li><p>AnalyserNode.fftSize</p>
 <ul>
-<li>Is a DOMString containing the value of the animation-name CSS property associated with the transition.</li>
+<li>一个无符号长型的值，用来表式傅立叶变化的大小以用来确定频域。它必须是介于32和2048之间的2的幕数，非零。如果不是2的幕，或者超出了规定的范围，会抛出 INDEX_SIZE_ERR 的错误。</li>
 </ul>
 </li>
-<li><p>AnimationEvent.elapsedTime Read only<br>Is a float giving the amount of time the animation has been running, in seconds, when this event fired, excluding any time the animation was paused. For an “animationstart” event, elapsedTime is 0.0 unless there was a negative value for animation-delay, in which case the event will be fired with elapsedTime containing  (-1 * delay).</p>
-</li>
-<li><p>AnimationEvent.pseudoElement Read only<br>Is a DOMString, starting with ‘::’, containing the name of the pseudo-element the animation runs on. If the animation doesn’t run on a pseudo-element but on the element, an empty string: ‘’.</p>
-</li>
-</ul>
-<h3 id="Constructor">Constructor</h3><ul>
-<li>AnimationEvent()<ul>
-<li>根据参数创建一个 AnimationEvent 事件。</li>
-</ul>
-</li>
-</ul>
-<h3 id="Methods">Methods</h3><p>还从父类 Event 中继承方法。</p>
+<li><p>AnalyserNode.frequencyBinCount <strong>只读</strong></p>
 <ul>
-<li>AnimationEvent.initAnimationEvent()<ul>
-<li>Initializes a AnimationEvent created using the deprecated Document.createEvent(“AnimationEvent”) method.</li>
+<li>无符号长整型。 containing half the FFT size.</li>
+</ul>
+</li>
+<li><p>AnalyserNode.minDecibels</p>
+<ul>
+<li>Is a double value representing the minimum power value in the scaling range for the FFT analysis data for conversion to unsigned byte values. If a value greater than AnalyserNode.maxDecibels is set, an INDEX_SIZE_ERR exception is thrown. 默认值是 -100.</li>
+</ul>
+</li>
+<li><p>AnalyserNode.maxDecibels</p>
+<ul>
+<li>Is a double value representing the maximumum power value in the scaling range for the FFT analysis data for conversion to unsigned byte values. If a value smaller than AnalyserNode.minDecibels is set, an INDEX_SIZE_ERR exception is thrown. 默认值是 -30.</li>
+</ul>
+</li>
+<li><p>AnalyserNode.smoothingTimeConstant</p>
+<ul>
+<li>Is a double value representing the averaging constant with the last analysis frame. It must be between 0 and 1, included and defaults to 0.8 (and 0 meaning no time averaging). If outside this range, an INDEX_SIZE_ERR exception is thrown</li>
 </ul>
 </li>
 </ul>
-<h3 id="Reference">Reference</h3><p><a href="http://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent.html" target="_blank" rel="external">http://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent.html</a></p>
+<h2 id="Methods">Methods</h2><p>从父类 AudioNode 继承方法</p>
+<p>Analyser.getFloatFrequencyData()<br>Copies the current frequency data into the array, the passed floating-point array. If the array has fewer elements than the frequencyBinCount, excess elements are dropped. If it has more elements than needed, excess elements are ignored.</p>
+<p>Analyser.getByteFrequencyData()<br>Copies the current frequency data into the array, the passed unsigned byte array. If the array has fewer elements than the frequencyBinCount, excess elements are dropped. If it has more elements than needed, excess elements are ignored.</p>
+<p>Analyser.getByteTimeDomainData()<br>Copies the current waveform, or time-domain, data into the array, the passed unsigned byte array. If the array has fewer elements than the fftSize, excess elements are dropped. If it has more elements than needed, excess elements are ignored.</p>
+<h2 id="Reference">Reference</h2><p><a href="http://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode" target="_blank" rel="external">http://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode</a></p>
+<blockquote>
+<p>2014-08-19 Wenbin</p>
+</blockquote>
 
     </article>
-    <button id="js-fullscreen">
-  <span id="icon-arrow" class="fontello"></span>
-</button>
-<script src="/js/jquery-2.0.3.min.js"></script>
-<script src="/js/jquery.pjax.js"></script>
-<script src="/js/nprogress.js"></script>
-<!-- <scrpit src="/js/highlight.pack.js"></scrpit> -->
-<script src="/js/script.js"></script>
-<!-- <script src="/js/js-lib.js"></script> -->
-
-
-  <link rel="stylesheet" href="/css/codeStyle/solarized-dark.css" />
-  <script src="/js/highlight.pack.js"></script>
-
-
-  <div id="post__action">
-      <a id="icon-heart" class="fontello" href="javascript:donate();"></a>
-  </div>
-  <script src="/layer/layer.js"></script>
-  <script src="/layer/extend/layer.ext.js"></script>
-
-
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="undefined" data-title="AnimationEvent" data-url="http://shuoit.net../../代码/2014/08/11/docs-javascript-MDN-classes-AnimationEvent.html"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script>
-var duoshuoQuery = {short_name:"wwb"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0]
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
+    <div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank"></a>
+</div> <!-- end #post__share -->
+<div id="disqus_thread" name="eqielb">
+  <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
+</div>
 
 
 
-        <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Hosted on <a href="https://pages.github.com" target="_blank">Github</a></p>
-<!-- 百度统计 -->
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?a01595b492af7e4a793230e3d49ae638";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
+        
+          <div id="post__action">
+              <a id="icon-heart" class="fontello" href="javascript:donate();"></a>
+          </div>
+        
+        <p id="copyright">
+  Powered by <a href="http://jekyllrb.com" target="_blank">Hexo</a>
+  &nbsp;&nbsp;Hosted on <a href="https://pages.github.com" target="_blank">Github</a>
+</p>
 
       </div>
       <div id="post__toc-trigger">
@@ -529,6 +513,29 @@ var duoshuoQuery = {short_name:"wwb"};
         </div>
       </div>
     </div>
-
+    <button id="js-fullscreen">
+      <span id="icon-arrow" class="fontello"></span>
+    </button>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.pjax.js"></script>
+    <script src="/js/nprogress.js"></script>
+    <script src="/js/script.js"></script>
+    
+      <link rel="stylesheet" href="/css/codeStyle/solarized-dark.css" />
+      <script src="/js/highlight.pack.js"></script>
+    
+    
+      <script src="/layer/layer.js"></script>
+      <script src="/layer/extend/layer.ext.js"></script>
+    
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
   </body>
 </html>
