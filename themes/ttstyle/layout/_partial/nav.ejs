@@ -1,0 +1,50 @@
+<aside id="sidebar">
+  <div id="tags">
+    <div id="sidebar-social">
+      <a href="/feed.xml" class="sidebar-social-icon feed"></a>
+      <a href="mailto:bin2302@gmail.com" class="sidebar-social-icon email"></a>
+      <a href="https://twitter.com/eqielb" class="sidebar-social-icon twitter" target="_blank"></a>
+      <a href="https://github.com/eqielb" class="sidebar-social-icon github" target="_blank"></a>
+    </div>
+    <ul id="tags__ul">
+      <li id="pl__all" class="tags__li tags__li-all tags-btn active">
+        <b style="background-image:url(/img/r/0.jpg);"></b>
+        <h4>所有</h4>
+      </li>
+      <% site.categories.each(function(item, index){ %>
+      <li id="<%= item.name %>" data-filter="<%= item.name %>" class="tags__li tags-btn">
+        <b style="background-image:url(/img/r/<%= index+1 %>.jpg);"></b>
+        <h4><%= item.name %></h4>
+      </li>
+      <% }); %>
+    </ul>
+    <div class="rotator">
+      <div class="corner">
+        <div class="title">
+          <div class="shadow" style="opacity: 1;"></div>
+        </div>
+        <div class="border"></div>
+        <div class="text">开放源代码</div>
+      </div>
+    </div>
+  </div> <!-- end #tags -->
+  <div id="posts-list">
+    <!--
+    <div id="search-form">
+      <a href="/index.html" id="mobile-avatar" style="background-image:url(/img/avatar.jpg)"></a>
+      <input id="search-input" type="text" placeholder="搜索 (っ °Д °;)っ">
+    </div>
+    -->    
+    <nav id="pl__container">
+      <% site.categories.each(function(category){ %>
+        <% category.posts.each(function(post){ %>
+          <a class="<%= category.name %> pl__all" href="/<%- url_for(post.path) %>" title="<%= post.title%>">
+            <span class="pl__circle"></span>
+            <span class="pl__title"><%= post.title %></span>
+            <span class="pl__date"><%= date(post.date) %></span>
+          </a>
+        <% }); %>
+      <% }); %>
+    </nav>
+  </div> <!-- end #posts-list -->
+</aside> <!-- end #sidebar -->

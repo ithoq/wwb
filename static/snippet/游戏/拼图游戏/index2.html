@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>拼图游戏 -- 单机练习版</title>
+<link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="warp">
+    	<div class="playWrap">
+        	<span class="title">拼图游戏 -难度赛- 单机练习版</span>
+            <div class="content">
+            	<div id="play" class="play"></div>
+            </div>
+            <div class="eg">
+            	<p>说明:难度赛是在规定时间内完成一局比赛，过关后总分累计达标后自动升级难度。每完成一局时间将重置</p>
+                <p>难度说明：</p>
+                <p>难度1：2*2 块。时间5秒。1000分升级</p>
+                <p>难度1：3*3 块。时间20秒。2000分升级</p>
+                <p>难度3：4*4 块。时间60秒。3000分升级</p>
+                <p>难度4：5*5 块。时间120秒。4000分升级</p>
+            </div>
+        </div>
+    </div>
+    <div class="layout"></div>
+    
+    
+<script src="js/play.js" language="javascript" type="text/javascript"></script>
+
+<script>
+window.onload = function(){
+	new play();
+}
+</script> 
+</body>
+</html>

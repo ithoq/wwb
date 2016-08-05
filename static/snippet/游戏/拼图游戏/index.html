@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>拼图游戏 -- 单机练习版</title>
+<link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="warp">
+    	<div class="playWrap">
+        	<span class="title">拼图游戏 -计时赛- 单机练习版</span>
+            <div class="content">
+            	<div id="play" class="play"></div>
+            </div>
+                <div class="eg">说明:计时赛是在规定的时间内完成比赛，每完成一局时间不重置，时间默认300秒</div>
+        </div>
+    </div>
+    <div class="layout"></div>
+    
+    
+<script src="js/play.js" language="javascript" type="text/javascript"></script>
+
+<script>
+window.onload = function(){
+	new play({
+		type:"time"	
+	});
+}
+</script> 
+</body>
+</html>
