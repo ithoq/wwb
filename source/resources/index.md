@@ -1,4 +1,5 @@
-title: resources
+---
+title: 资源
 date: 2014-09-13 15:31:00
 ---
 

@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "oh-my-zsh-中bundler插件和bower插件冲突"
-date:   2014-04-23 00:00:00
-categories: tools
+title: "oh-my-zsh-中bundler插件和bower插件冲突"
+date: 2014-04-23 00:00:00
+categories:
+- 代码
+tags:
+- tools
 ---
 
 今天使用 MEAN 新建了一个项目，使用 bower 安装依赖的时候的报了一个莫名其妙的错误：

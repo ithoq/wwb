@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "通过 Samba 实现 Win/Mac 访问 Linux"
-date:   2014-04-08 00:00:00
-categories: tools
+title: "通过 Samba 实现 Win/Mac 访问 Linux"
+date: 2014-04-08 00:00:00
+categories:
+- 代码
+tags:
+- tools
 ---
 
 今天看公wiki看到samba，上面的后端开发者还推荐使用samba将测试服务器上开的用户目录映射到本地做开发。

@@ -1,8 +1,12 @@
 ---
-layout: post
-title:  "更新 requests 包之后报 has no attribute '__getitem__' 的错"
-date:   2014-03-13 00:00:00
-categories: python
+title: "更新 requests 包之后报 has no attribute '__getitem__' 的错"
+date: 2014-03-13 00:00:00
+updateed:
+categories:
+- 代码
+tags:
+- python
+- request
 ---
 
 翻代码的时候看到段一年多前用 python 写的下载图片站图片的代码。

@@ -1,8 +1,10 @@
 ---
 title: "Moto defy Mac 上无法连接 adb 问题"
 date: 2013-02-11 00:00:00
-categories: android
+categories:
+- 代码
 tags:
+- android
 ---
 
 还在用一代神机 defy，虽然已经老的不行，价格从入手时的 2k 掉到现在 150软妹币，用来调试程序还是可以的。

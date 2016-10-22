@@ -1,9 +1,42 @@
 ---
-title: about
+title: 关于
 date: 2014-08-11 19:41:32
 ---
 
 ### Wu Wenbin
+
+### 联系方式
+
+- 手机: 13735851501
+- Email: bin2302@gmail.com
+
+### 个人信息
+
+- 吴文斌/男/1990
+- 本科/浙江科技学院/包装工程
+- 工作年限: 4年
+- 博客: http://wenbin.coding.me
+- Github: http://github.com/eaiero
+- 职位: Web前端/后端
+- 城市: 杭州/温州
+
+### 工作经历
+
+#### 杭州卷瓜网络有限公司（蘑菇街）
+
+#### 杭州优朋科技有限公司
+
+### 业余经历
+
+### 大学经历
+
+### 关键字
+
+#### 技术
+
+#### 生活
+
+#### 兴趣
 
 Web Developer, Working at Mogujie, Hangzhou
 

@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "chanced upon an IDEA bug"
 date:   2014-03-31 00:00:00
-categories: tools
+categories:
+- 代码
+tags:
+- tools
 ---
 
 打开 IDEA 用 Gradle 编译了下 android 项目，中途弹窗提示

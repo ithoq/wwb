@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "angular Duplicates in a repeater are not allowed 错误"
-date:   2014-05-20 17：05；00
-categories: angularjs
+title: "angular Duplicates in a repeater are not allowed 错误"
+date: 2014-05-20 17：05；00
+categories:
+- 代码
+tags:
+- javascript
 ---
 最近在做一个使用 MEAN.io 开发的项目，用到 angular, mongodb, express 之类比较有意思的框架类库，只是自己这些东西都不是很熟，使用中遇到了很多问题，也只能慢慢看文档。
 

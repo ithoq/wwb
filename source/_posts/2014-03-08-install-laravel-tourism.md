@@ -1,7 +1,10 @@
 ---
-title:  "安装 Laravel 教程"
-date:   2014-03-08 00:00:00
-categories: php
+title: "安装 Laravel 教程"
+date: 2014-03-08 00:00:00
+categories:
+- 代码
+tags:
+- php
 ---
 
 ## 安装 composer

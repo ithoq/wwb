@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "ie67 overflow hidden 不起效果的bug"
-date:   2014-05-19 18:28:00
-categories: css
+title: "ie67 overflow hidden 不起效果的bug"
+date: 2014-05-19 18:28:00
+categories:
+- 代码
+tags:
+- css
 ---
 
 中午一个前些天写的页面联调好了，做了下兼容性测试准备上线，结果发现 ie6、7下
@@ -26,4 +28,3 @@ overflow: hidden;
 纠结了许久后，问了下同事，然后被告知 ovh 没加 width...
 
 好吧， ie 太不智能，宽高什么都不能自适应，记录下，以免下次又忘了。
-

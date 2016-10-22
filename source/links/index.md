@@ -1,5 +1,5 @@
 ---
-title: links
+title: 链接
 date: 2014-08-11 19:41:54
 type: pages
 ---

@@ -1,0 +1,64 @@
+## Services
+google_analytics:
+duoshuo: eqielb
+
+## Meta
+rss: /atom.xml
+favicon: /favicon.jpeg
+# icon: /favicon.png
+source_url: https://github.com/aiwb/xxx/blob/master/
+license:
+  name: 'CC BY-NC-SA 3.0'
+  url: 'http://creativecommons.org/licenses/by-nc-sa/3.0/cn'
+
+## Menus
+menus:
+  首页: /
+  存档: /archives
+  电影: /movies
+  书籍: /books
+  工具: /tools
+  链接: /links
+  简历: /resume
+  关于: /about
+  蘑菇街招聘: /recruit
+  广告: /shout
+
+right_menus:
+  'RSS': /atom.xml
+  'fork on Github':
+    target: '_blank'
+    href: 'https://github.com/aiwb'
+
+## Banners && Widgets
+banners:
+  markdown: |
+    欢迎来到我的博客。
+
+widgets:
+  -
+    markdown: |
+      欢迎来到我的博客。
+
+  -
+    tags: true
+
+  -
+    archives: true
+
+  -
+    copyright: true
+
+## SNS (Work in progress)
+sns:
+  qq: '541330190'
+  qun: '71058585'
+  # v2ex: 'jybox'
+  mobile: '13735851501'
+  github: 'aiwb'
+  #keybase: 'jysperm'
+  #zhihu: 'jysperm'
+  #google_plus: '+王子亭jysperm'
+  #segmentfault: 'jysperm'
+  #twitter: 'jysperm'
+  #bitcoin: ''

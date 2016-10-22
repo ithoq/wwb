@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "国内高速 npm 源"
-date:   2014-04-05 00:00:00
-categories: nodejs
+title: "国内高速 npm 源"
+date: 2014-04-05 00:00:00
+categories:
+- 代码
+tags:
+- nodejs
 ---
 
 刚来公司时，发了台新的MBP，要配置开发环境，需要用npm安装很多工具包。结果站旁边的组长就开始吐槽公司内npm安装工具包速度有多少慢，过了一回来来了个后端的开发，看我在装东西，也开始吐槽npm慢。
