@@ -38,7 +38,7 @@ banners:
 widgets:
   -
     markdown: |
-      欢迎来到我的博客。
+      前端QQ群：71058585
 
   -
     tags: true
@@ -53,12 +53,13 @@ widgets:
 sns:
   qq: '541330190'
   qun: '71058585'
-  # v2ex: 'jybox'
+  v2ex: 'ezreal'
   mobile: '13735851501'
   github: 'aiwb'
   #keybase: 'jysperm'
-  #zhihu: 'jysperm'
-  #google_plus: '+王子亭jysperm'
-  #segmentfault: 'jysperm'
-  #twitter: 'jysperm'
-  #bitcoin: ''
+  zhihu: 'wu-wen-bin-55'
+  google_plus: '112906595164862928708'
+  segmentfault: 'eaielo'
+  twitter: '2wb_x'
+  ## https://blockchain.info/zh-cn/wallet/
+  bitcoin: '1KTbwSxfLYh6up7KbzZzCa7WJzckC9BhYp'

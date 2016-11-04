@@ -1,5 +1,6 @@
 ---
 title: 在 OSX 上调试 Chromium
+date: 2016-10-31 13:19:19
 tags:
   - chromium
 categories: []

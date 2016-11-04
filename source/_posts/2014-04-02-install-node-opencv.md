@@ -1,6 +1,6 @@
 ---
-title:  "安装 node-opencv"
-date:   2014-04-02 00:00:00
+title: "安装 node-opencv"
+date: 2014-04-02 00:00:00
 categories:
 - 代码
 tags:

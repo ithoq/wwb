@@ -1,5 +1,6 @@
 ---
 layout: index
+date: 2016-10-23 09:37:18
 ---
 <div class="container-fluid flush-with-header">
   <div class="row margin-bottom-40 row-corporate bg-light-1">
@@ -69,7 +70,6 @@ layout: index
 
 <div class="main">
   <div class="container">
-    <!-- BEGIN STEPS -->
     <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3 wow
     fadeIn">
       <div class="col-md-4 col-sm-4 front-step-col">
@@ -91,9 +91,6 @@ layout: index
 	</div>
       </div>
     </div>
-    <!-- END STEPS -->
-
-    <!-- BEGIN RECENT WORKS -->
     <div class="row recent-work margin-bottom-40">
       <div class="col-md-3">
 	<h2 class="wow fadeIn"><a href="/projects/">Recent Work</a></h2>
@@ -192,11 +189,7 @@ layout: index
 	</div>       
       </div>
     </div>   
-    <!-- END RECENT WORKS -->
-
-    <!-- BEGIN TABS AND TESTIMONIALS -->
     <div class="row mix-block margin-bottom-40">
-      <!-- TABS -->
       <div class="col-md-7 tab-style-1">
 	<ul class="nav nav-tabs">
 	  <li class="active"><a href="#tab-1" data-toggle="tab">Multipurpose</a></li>
@@ -234,12 +227,8 @@ layout: index
 	  </div>
 	</div>
       </div>
-      <!-- END TABS -->
-
-      <!-- TESTIMONIALS -->
       <div class="col-md-5 testimonials-v1">
 	<div id="myCarousel" class="carousel slide">
-	  <!-- Carousel items -->
 	  <div class="carousel-inner">
 	    <div class="active item">
 	      <blockquote><p>Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.</p></blockquote>
@@ -273,15 +262,11 @@ layout: index
 	    </div>
 	  </div>
 
-	  <!-- Carousel nav -->
 	  <a class="left-btn" href="#myCarousel" data-slide="prev"></a>
 	  <a class="right-btn" href="#myCarousel" data-slide="next"></a>
 	</div>
       </div>
-      <!-- END TESTIMONIALS -->
     </div>                
-    <!-- END TABS AND TESTIMONIALS -->
-    <!-- BEGIN BLOCKQUOTE BLOCK -->   
     <div class="row quote-v1 margin-bottom-40 ">
       <div class="col-md-9">
 	<span>Metronic - The Most Complete &amp; Popular Admin &amp; Frontend Theme</span>
@@ -290,10 +275,6 @@ layout: index
 	<a class="btn-transparent" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"><i class="fa fa-rocket margin-right-10"></i>Preview Admin</a>
       </div>
     </div>
-    <!-- END BLOCKQUOTE BLOCK -->
-
-
-    <!-- BEGIN CLIENTS -->
     <div class="row margin-bottom-40 our-clients">
       <div class="col-md-3">
 	<h2><a href="javascript:;">Our Clients</a></h2>
@@ -352,7 +333,5 @@ layout: index
 	</div>
       </div>          
     </div>
-    <!-- END CLIENTS -->
   </div>
 </div>
-

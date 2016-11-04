@@ -1,6 +1,6 @@
 ---
-title:  "chanced upon an IDEA bug"
-date:   2014-03-31 00:00:00
+title: "chanced upon an IDEA bug"
+date: 2014-03-31 00:00:00
 categories:
 - 代码
 tags:

@@ -8,8 +8,8 @@ categoriesAlias: others
 tags:
 keywords:
 description:
-thumbnail: https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png
-lede: "This text will appear by the thumbnail in the blog page."
-author: Wenbin
+thumbnail:
+lede:
+author: 吴文斌
 comments: true
 ---
