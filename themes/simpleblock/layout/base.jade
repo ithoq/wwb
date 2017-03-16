@@ -21,11 +21,7 @@ mixin widget(widget)
   else if widget.copyright
     .widget.text-content
       p
-        | 该博客使用基于 &nbsp;
-        a(href='http://hexo.io' rel='no-follow') Hexo
-        | &nbsp; 的 &nbsp;
-        a(href='https://github.com/jysperm/hexo-theme-simpleblock' rel='no-follow') simpleblock
-        | &nbsp; 主题。博客内容使用 &nbsp;
+        | 博客内容使用 &nbsp;
         a(href=theme.license.url rel='no-follow') #{theme.license.name}
         | &nbsp; 授权发布。最后生成于 #{date(Date.now(), 'YYYY-MM-DD')}.
   else
@@ -33,19 +29,10 @@ mixin widget(widget)
       +widget-inter(widget)
 
 doctype html
-html
+html(lang="zh_CN")
+
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    if theme.favicon
-      link(rel='icon', href=theme.favicon)
-    if theme.rss
-      link(rel='alternate', type='application/rss+xml', title=config.title href=theme.rss)
-    link(rel='stylesheet', href='/styles.css')
-    block head
-      title= config.title
-      keywords= config.keywords
-      description= config.description
+    include _partial/site/head
 
   body
     .container
@@ -87,4 +74,17 @@ html
         window.duoshuoQuery = {short_name: '#{theme.duoshuo}'}
       script(src='https://static.duoshuo.com/embed.js')
 
-    block footer
+    footer.site-footer
+      block footer
+        include _partial/site/footer
+
+    script(src='https://www.gstatic.com/firebasejs/3.7.2/firebase.js')
+    script.
+      var config = {
+        apiKey: "AIzaSyBDluzKHREIcfpHmdZUVFdLHTyAJlQTa1Y",
+        authDomain: "wuwb-1d548.firebaseapp.com",
+        databaseURL: "https://wuwb-1d548.firebaseio.com",
+        storageBucket: "wuwb-1d548.appspot.com",
+        messagingSenderId: "1014804878930"
+      };
+      firebase.initializeApp(config);

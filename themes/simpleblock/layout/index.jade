@@ -17,7 +17,6 @@ block head
     meta(name='keywords', content=config.keywords)
     meta(name='description', content=config.description)
 
-
 mixin article(post)
   article
     header
@@ -46,8 +45,10 @@ mixin article(post)
             li
               a(href=url_for(tag.path))= tag.name
           - });
-
-    .markdown-body!= post.content
+    if post.excerpt
+      .markdown-body!= post.excerpt
+    else
+      .markdown-body!= post.content
 
     if !page.posts && theme.duoshuo
       .ds-thread(data-thread-key=commentKey(post), data-title=post.title, data-url=post.permalink)

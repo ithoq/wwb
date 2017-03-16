@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "6"
+branches:
+  only:
+    - master
+before_install:
+  - npm install hexo-cli -g
+  - git config --global push.default matching
+  - git config --global user.name "aiwb"
+  - git config --global user.email "541330190@qq.com"
+  - sed -i'' "/^ *repo/s~github\.com~${ce66c5a98b2e115bfa70750edf29232fc6968c01}@github.com~" _config.yml
+install:
+  - npm install
+script:
+  # - git submodule init      # 用于更新主题
+  # - git submodule update
+  - hexo clean
+  - hexo d -g
+cache:
+  directories:
+    - node_modules

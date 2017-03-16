@@ -22,6 +22,9 @@ mapp 27899 26.0 0.0 2187268 37712 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home
 mapp 27937 44.0 0.0 2034388 33456 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home/mapp/mogu-spider/src/spider/H5spider.js http://i.mogujie.com/dapei/1si2k
 mapp 27940 33.0 0.0 2032320 29912 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home/mapp/mogu-spider/src/spider/PCspider.js http://ai.mogujie.com/13fosi
 
+<!--more-->
+
+```shell
 D    不可中断     Uninterruptible sleep (usually IO)
 R    正在运行，或在队列中的进程
 S    处于休眠状态
@@ -36,3 +39,4 @@ L    有些页被锁进内存
 s    包含子进程
 +    位于后台的进程组；
 l    多线程，克隆线程  multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
+```

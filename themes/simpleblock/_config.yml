@@ -38,7 +38,14 @@ banners:
 widgets:
   -
     markdown: |
-      前端QQ群：71058585
+      前端QQ群：71058585.<br>
+      我的微信：
+      <img style="width: 100%;" src="http://ogl3ykzzi.bkt.clouddn.com/20170303110511_wGClDr_微信二维码.jpeg" alt="吴文斌的微信二维码">
+      <div>
+        <a href="javascript:;">Linkedin</a>
+        <a href="javascript:;">E-mail</a>
+        <a href="javascript:;">Weibo</a>
+      </div>
 
   -
     tags: true

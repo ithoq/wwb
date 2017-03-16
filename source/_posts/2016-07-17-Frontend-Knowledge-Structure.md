@@ -34,6 +34,9 @@ HTML/HTML5
 CSS/CSS3
 Sass/LESS/Stylus/postCSS
 PhotoShop/Paint.net/Fireworks/GIMP/Sketch
+
+<!-- more -->
+
 开发工具
 编辑器和IDE
 VIM/Sublime Text2
