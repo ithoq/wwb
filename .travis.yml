@@ -8,8 +8,8 @@ before_install:
   - npm install hexo-cli -g
   - git config --global push.default matching
   - git config --global user.name "aiwb"
-  - git config --global user.email "541330190@qq.com"
-  - sed -i'' "/^ *repo/s~github\.com~${ce66c5a98b2e115bfa70750edf29232fc6968c01}@github.com~" _config.yml
+  - git config --global user.email "bin2302@gmail.com"
+  - sed -i'' "/^ *repo/s~github\.com~${20c4bc57696abc111eceec1a36982358a2037c83}@github.com~" _config.yml
 install:
   - npm install
 script:
