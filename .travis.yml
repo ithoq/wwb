@@ -9,7 +9,7 @@ before_install:
   - git config --global push.default matching
   - git config --global user.name "aiwb"
   - git config --global user.email "bin2302@gmail.com"
-  - sed -i'' "/^ *repo/s~github\.com~${20c4bc57696abc111eceec1a36982358a2037c83}@github.com~" _config.yml
+  - sed -i'' "/^ *repo/s~github\.com~${ACCESS_TOKEN}@github.com~" _config.yml
 install:
   - npm install
 script:
